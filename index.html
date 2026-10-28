@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f4ef">
+  <meta name="description" content="Your personal shortcut to your PC and Codex through Chrome Remote Desktop.">
+  <meta name="robots" content="noindex,nofollow">
+  <title>Codex Access</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%231c2823'/%3E%3Cpath d='m18 22 10 10-10 10m16 0h12' fill='none' stroke='%23c5edce' stroke-width='5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <style>
+    :root{color-scheme:light;--paper:#f5f4ef;--ink:#202a24;--muted:#626960;--line:#d9ddd3;--green:#254e38;--soft:#e8eddf}
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;min-height:100svh;display:flex;flex-direction:column}
+    a{color:inherit}a:focus-visible,summary:focus-visible{outline:3px solid #648c69;outline-offset:5px}
+    header,footer{width:min(1080px,100%);margin-inline:auto;padding:27px 32px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+    .wordmark{display:flex;align-items:center;gap:11px;font-size:14px;font-weight:650;letter-spacing:.01em}
+    .mark{width:30px;height:30px;background:var(--ink);color:var(--paper);display:grid;place-items:center;border-radius:8px;font-family:ui-monospace,monospace;font-weight:500}
+    .meta,.eyebrow{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase}
+    .meta{color:var(--muted)}
+    main{flex:1;display:grid;align-content:center;width:min(700px,100%);margin-inline:auto;padding:58px 32px 72px}
+    .device{width:72px;height:72px;border:1px solid var(--line);background:#fcfcf8;border-radius:20px;display:grid;place-items:center;margin-bottom:34px;box-shadow:0 5px 12px #1c282305}
+    .eyebrow{color:var(--green);margin:0 0 18px;font-weight:600}
+    h1{font-size:clamp(44px,7.5vw,70px);font-weight:550;line-height:1.06;letter-spacing:-.055em;margin:0 0 24px;max-width:600px}
+    .intro{font-size:18px;line-height:1.65;max-width:470px;color:var(--muted);margin:0 0 34px}
+    .connect{display:inline-flex;align-items:center;justify-content:space-between;gap:30px;background:var(--ink);border:1px solid var(--ink);border-radius:12px;color:white;padding:18px 22px;font-size:16px;font-weight:600;text-decoration:none;min-height:58px;transition:background .15s,transform .15s;width:fit-content}
+    .connect:hover{background:var(--green);transform:translateY(-1px)}
+    .helper{font-size:13px;line-height:1.65;color:var(--muted);max-width:470px;margin:17px 0 36px}
+    .steps{padding:20px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);max-width:520px}
+    summary{cursor:pointer;font-size:14px;font-weight:600;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:16px}
+    summary::-webkit-details-marker{display:none}
+    summary::after{content:'+';font-size:22px;font-weight:400;color:var(--muted)}
+    details[open] summary::after{content:'−'}
+    ol{padding-left:22px;margin:20px 0 0;color:var(--muted);font-size:14px;line-height:1.8}
+    li+li{margin-top:9px}
+    li a{text-underline-offset:3px;color:var(--green)}
+    .note{font-size:13px;line-height:1.7;color:var(--muted);margin:18px 0 0}
+    footer{border-top:1px solid var(--line);font-size:12px;color:var(--muted);line-height:1.6}
+    footer a{text-underline-offset:3px}
+    @media(max-width:520px){header,footer{padding:22px 24px}.meta{display:none}main{padding:48px 24px 60px}.device{margin-bottom:28px}h1{font-size:49px}.intro{font-size:17px}.connect{width:100%}footer{align-items:flex-start;flex-direction:column;gap:8px}}
+    @media(prefers-reduced-motion:reduce){.connect{transition:none}.connect:hover{transform:none}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wordmark"><span class="mark" aria-hidden="true">&gt;_</span> Codex Access</div>
+    <span class="meta">Personal gateway</span>
+  </header>
+  <main>
+    <div class="device" aria-hidden="true">
+      <svg width="38" height="38" viewBox="0 0 38 38" fill="none"><rect x="4" y="5" width="30" height="22" rx="3" stroke="#254e38" stroke-width="1.7"/><path d="M14 33h10M19 27v6m-8-20 4 3-4 3m9 0h6" stroke="#254e38" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </div>
+    <p class="eyebrow">Back to your workspace</p>
+    <h1>Your desk.<br>Anywhere.</h1>
+    <p class="intro">Connect to your PC, open Codex, and pick up where you left off.</p>
+    <a class="connect" href="https://remotedesktop.google.com/access" rel="noreferrer">Connect to my PC <span aria-hidden="true">↗</span></a>
+    <p class="helper">Opens Chrome Remote Desktop. Sign in to the same Google account used on your PC, select your computer, and enter your PIN.</p>
+    <details class="steps">
+      <summary>First visit? Set up this PC once.</summary>
+      <ol>
+        <li>On your PC, open <a href="https://remotedesktop.google.com/access" rel="noreferrer">Chrome Remote Desktop</a> and choose <strong>Set up remote access</strong>.</li>
+        <li>Install the host, name your computer, and choose your own private PIN.</li>
+        <li>Once your computer appears online there, return to this page from another device and connect.</li>
+      </ol>
+      <p class="note">Remote access must be set up before the button can connect you to this PC. On a phone, use the Chrome Remote Desktop app if prompted.</p>
+    </details>
+  </main>
+  <footer>
+    <span>Keep your PC on and connected to the internet.</span>
+    <a href="https://support.google.com/chrome/answer/1649523" rel="noreferrer">Connection help</a>
+  </footer>
+</body>
+</html>
